@@ -1,0 +1,1 @@
+const OWM_API_KEY = "8c02092daf06e3b389e20bc135608c37";

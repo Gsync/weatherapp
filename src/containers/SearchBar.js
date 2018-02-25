@@ -13,9 +13,12 @@ class SearchBar extends Component {
             searchTerm: e.target.value
         });
     }
+    onFormSubmit(e) {
+        e.preventDefault();
+    }
     render() {
         return (
-            <form className="input-group">
+            <form onSubmit={this.onFormSubmit} className="input-group">
                 <input
                     type="text"
                     placeholder="Search a city here..."
