@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-// import { combineReducers } from 'redux';
 import { fetchWeather } from '../actions/index';
 
 class SearchBar extends Component {
