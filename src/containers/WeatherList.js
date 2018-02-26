@@ -5,6 +5,13 @@ class WeatherList extends Component {
     constructor(props) {
         super(props);
     }
+    renderWeather(data) {
+        return (
+            <tr key={data.city.id}>
+                <td>{data.city.name}</td>
+            </tr>
+        );
+    }
     render() {
         return (
             <table className="table table-hover">
@@ -17,7 +24,7 @@ class WeatherList extends Component {
                     </tr>
                 </thead>
                 <tbody>
-
+                    {this.props.weather.map(this.renderWeather)}
                 </tbody>
             </table>
         );
